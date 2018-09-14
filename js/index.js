@@ -106,7 +106,7 @@ var vertices;
 
 function update() {
 
-    PRNG.setSeed(3);
+    PRNG.setSeed(42);
 
     var r, a, v, o;
     var count = 20;
