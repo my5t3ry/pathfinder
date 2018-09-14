@@ -54,7 +54,6 @@ function norm(t, a, b) {
     return (t - a) / (b - a);
 }
 
-
 function flush(vertices, size, _w, _h) {
     var sides = 3;
     var l = 2 * Math.sin(Math.PI / sides);
