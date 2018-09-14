@@ -109,9 +109,9 @@ function update() {
     PRNG.setSeed(42);
 
     var r, a, v, o;
-    var count = 20;
+    var count = 40;
     var spawn = 40;
-    var offset = 150;
+    var offset = 130;
     vertices = [];
     for (var i = 0; i < count; i++) {
         r = (PRNG.random() - .5) * size / 2;
