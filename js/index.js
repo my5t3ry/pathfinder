@@ -55,7 +55,7 @@ function norm(t, a, b) {
 }
 
 
-function yolo(vertices, size, _w, _h) {
+function flush(vertices, size, _w, _h) {
     var sides = 3;
     var l = 2 * Math.sin(Math.PI / sides);
     var a = l / (2 * Math.tan(Math.PI / sides));
@@ -150,10 +150,8 @@ function update() {
 
     var m = size / 2;
     for (i = 8; i <= m; i *= 2) {
-
         ctx.globalAlpha = (1 - i / m) * .1;
-        yolo(vertices, i, size, size);
-
+        flush(vertices, i, size, size);
     }
     requestAnimationFrame(update);
 }
